@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djdk.lang.Process.launchMechanism=vfork" />
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="app-gateway" />
         <module name="top-trendify-feign-api" />
         <module name="top-trendify-common" />
         <module name="top-trendify-model" />
-        <module name="top-trendify-gateway" />
-        <module name="top-trendify-service" />
-        <module name="top-trendify-test" />
+        <module name="user-server" />
         <module name="top-trendify-utils" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="top-trendify-test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TopTrendify" options="" />
+      <module name="app-gateway" options="-parameters" />
       <module name="top-trendify-common" options="-parameters" />
       <module name="top-trendify-feign-api" options="-parameters" />
-      <module name="top-trendify-gateway" options="-parameters" />
+      <module name="top-trendify-gateway" options="" />
       <module name="top-trendify-model" options="-parameters" />
-      <module name="top-trendify-service" options="-parameters" />
+      <module name="top-trendify-server" options="" />
       <module name="top-trendify-test" options="-parameters" />
       <module name="top-trendify-utils" options="-parameters" />
+      <module name="user-server" options="-parameters" />
     </option>
   </component>
 </project>

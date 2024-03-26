@@ -7,9 +7,14 @@
         <groupId>com.thehanged</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>top-trendify-service</artifactId>
+    <modules>
+        <module>user-server</module>
+    </modules>
+
+    <artifactId>top-trendify-server</artifactId>
 
     <dependencies>
         <!-- 引入依赖模块 -->

@@ -13,9 +13,8 @@
         <module>top-trendify-utils</module>
         <module>top-trendify-model</module>
         <module>top-trendify-feign-api</module>
-        <module>top-trendify-service</module>
+        <module>top-trendify-server</module>
         <module>top-trendify-gateway</module>
-        <module>top-trendify-test</module>
     </modules>
 
     <parent>
